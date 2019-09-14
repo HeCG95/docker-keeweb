@@ -1,0 +1,23 @@
+version: '2.3'
+networks:
+  bridge:
+    driver: bridge
+services:
+
+  keeweb:
+    image: antelle/keeweb
+    restart: "no"
+    mem_limit: 512m
+    networks:
+    - bridge
+    environment:
+      TZ: "Asia/Shanghai"
+      TIME_ZONE: "Asia/Shanghai"
+    volumes:
+    - ./localtime:/usr/share/zoneinfo/Asia/Shanghai:ro
+    - ./localtime:/etc/localtime:ro
+    - ./timezone:/etc/timezone:ro
+    - ./etc/nginx/external:/etc/nginx/external
+    ports: 
+    - "443:443"
+    - "80:80"
