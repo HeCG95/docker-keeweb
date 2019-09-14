@@ -36,7 +36,7 @@ The result is
 docker-keeweb_keeweb_1   /opt/entrypoint.sh nginx   Up      0.0.0.0:443->443/tcp, 0.0.0.0:80->80/tcp
 ```
 
-+ (3) View keeweb web console on : http://hostname:443.
++ (3) View keeweb web console on : http://hostname:443
 
 
 [1]: https://www.docker.com
