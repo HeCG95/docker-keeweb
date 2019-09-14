@@ -22,7 +22,7 @@ The result is
 Creating docker-keeweb_keeweb_1 ... done
 ```
 
-+ (2) Check the status of activemq artemis
++ (2) Check the status of keeweb
 
 ```
 docker-compose ps
